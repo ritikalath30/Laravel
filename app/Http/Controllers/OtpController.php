@@ -38,7 +38,7 @@ class OtpController extends Controller
         $curl = curl_init();
 
             curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://api.msg91.com/api/v5/otp/verify?otp_expiry=&mobile={}&otp=%24otp&authkey=%24authentication_key",
+            CURLOPT_URL => "https://api.msg91.com/api/v5/otp/verify?otp_expiry=&mobile=/register/{mobile_number}&otp=/send_otp&authkey=%24authentication_key",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,

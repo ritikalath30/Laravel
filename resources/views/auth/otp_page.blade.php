@@ -12,7 +12,7 @@
             </div>
         @endif
 
-        <form method="GET" action="{{ route('/otp') }}">
+        <form method="GET" action="{{ route('/send_otp') }}">
         
             @csrf
 
